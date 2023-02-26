@@ -1,26 +1,66 @@
-name: Build
+name: Build and Deploy
 
 on:
   push:
     branches:
       - main
 
+env:
+  JEKYLL_ENV: production
+
 jobs:
   build:
-    name: Build and Deploy Pages
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-    - name: Build Jekyll site
-      uses: actions/jekyll-build-pages@v1
-    - name: Upload built pages artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        artifact-name: built-pages
-        path: _site
-    - name: Upload artifact for deployment
-      uses: actions/upload-artifact@main
-      with:
-        name: pages-artifact
-        path: ${{ github.workspace }}/built-pages
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby 2.7.x
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.x
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Run actions/jekyll-build-pages
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+          future: false
+          build_revision: 31bddc948c2fb26cece3b6475d44025d7a9002f2
+          verbose: true
+          token: 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
+
+      - name: Run actions/upload-pages-artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: github-pages
+          path: ./_site
+          retention-days: 1
+
+      - name: Run actions/upload-artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: github-pages
+          path: /home/runner/work/_temp/artifact.tar
+          retention-days: 1
+          if-no-files-found: warn
+
+      - name: Post job cleanup
+        run: |
+          /usr/bin/git version
+          git config --global --add safe.directory ${{ github.workspace }}
+          git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+          git config --local --unset-all http.https://github.com/.extraheader
+
+      - name: Clean up orphan processes
+        run: pkill -P 1
+
