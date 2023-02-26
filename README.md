@@ -1,4 +1,7 @@
-<p align="center"><h1>🧠 چالش‌های شگفت‌انگیز چت‌جی‌پی‌تی</h1></p>
+<p align="center">
+<h1>🧠 دستورات، پرومپت‌ها و چالش‌های شگفت‌انگیز چت‌جی‌پی‌تی</h1>
+<h2>OpenAI Chat GPT-3 prompts and learning</h2>
+</p>
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Steamship](https://raw.githubusercontent.com/steamship-core/python-client/main/badge.svg)](https://www.steamship.com/build?utm_source=github&utm_medium=badge&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts)
 
