@@ -1,70 +1,70 @@
-<p align="center"><h1>🧠 Awesome ChatGPT Prompts</h1></p>
+<p align="center"><h1>🧠 چالش‌های شگفت‌انگیز چت‌جی‌پی‌تی</h1></p>
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Steamship](https://raw.githubusercontent.com/steamship-core/python-client/main/badge.svg)](https://www.steamship.com/build?utm_source=github&utm_medium=badge&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts)
 
-Welcome to the "Awesome ChatGPT Prompts" repository! This is a collection of prompt examples to be used with the ChatGPT model.
+به مخزن "چالش‌های شگفت‌انگیز چت‌جی‌پی‌تی" خوش آمدید! این مجموعه شامل مثال‌هایی از چالش‌هاست که با مدل چت‌جی‌پی‌تی می‌توانید استفاده کنید.
 
-The [ChatGPT](https://chat.openai.com/chat) model is a large language model trained by [OpenAI](https://openai.com) that is capable of generating human-like text. By providing it with a prompt, it can generate responses that continue the conversation or expand on the given prompt.
+مدل چت‌جی‌پی‌تی یک مدل زبانی بزرگ آموزش داده شده توسط OpenAI است که قادر به تولید متن شبیه به انسان است. با فراهم کردن یک چالش، می‌تواند پاسخ‌هایی تولید کند که در گفتگو ادامه دارد یا روی چالش داده شده توسعه می‌یابد.
 
-In this repository, you will find a variety of prompts that can be used with ChatGPT. We encourage you to [add your own prompts](https://github.com/f/awesome-chatgpt-prompts/edit/main/README.md) to the list, and to use ChatGPT to generate new prompts as well.
+در این مخزن، شما مجموعه‌ای از چالش‌های مختلفی را که می‌توان با چت‌جی‌پی‌تی استفاده کرد را پیدا خواهید کرد. ما شما را تشویق می‌کنیم که به فهرست خود چالش‌های خود را اضافه کنید و از چت‌جی‌پی‌تی برای تولید چالش‌های جدید استفاده کنید.
 
-To get started, simply clone this repository and use the prompts in the README.md file as input for ChatGPT. You can also use the prompts in this file as inspiration for creating your own.
+برای شروع، فقط کافیست این مخزن را کلون کرده و از چالش‌ها در فایل README.md به عنوان ورودی برای چت‌جی‌پی‌تی استفاده کنید. همچنین می‌توانید از چالش‌ها در این فایل به عنوان الهام بخش برای ایجاد چالش‌های خود استفاده کنید.
 
-We hope you find these prompts useful and have fun using ChatGPT!
+امیدواریم که این چالش‌ها برای شما مفید باشد و با استفاده از چت‌جی‌پی‌تی، از آن‌ها لذت ببرید!
 
-**[View on GitHub](https://github.com/f/awesome-chatgpt-prompts)**
+**[نسخه فارسی را در گیت‌هاب ببینید](https://github.com/xenOIvan/prompts.ir)**
 
-**[View on Hugging Face](https://huggingface.co/datasets/fka/awesome-chatgpt-prompts/)**
+**[نسخه انگلیسی را در گیت‌هاب ببینید](https://github.com/f/awesome-chatgpt-prompts)**
 
-**Download ChatGPT Desktop App**: **[macOS](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64.dmg)** / **[Windows](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64_en-US.msi)** / **[Linux](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/chat-gpt_0.10.1_amd64.deb)**
+**[نسخه (هنگینگ‌ فیس) را ببینید](https://huggingface.co/datasets/fka/awesome-chatgpt-prompts/)**
 
-> ℹ️ **NOTE:** Sometimes, some of the prompts may not be working as you expected or may be rejected by the AI. Please try again, start a new thread, or log out and log back in. If these solutions do not work, please try rewriting the prompt using your own sentences while keeping the instructions same.
+**نرم افزار غیر رسمی را دانلود کنید**: **[اپل](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64.dmg)** / **[ویندوز](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/ChatGPT_0.10.1_x64_en-US.msi)** / **[لینوکس](https://github.com/lencx/ChatGPT/releases/download/v0.10.1/chat-gpt_0.10.1_amd64.deb)**
 
-### Want to Write Effective Prompts?
+> ℹ️ **توجه**
+گاهی اوقات، برخی از چالش‌ها ممکن است به طریقی که شما انتظار دارید کار نکنند یا توسط هوش مصنوعی رد شوند. لطفا دوباره تلاش کنید، یک موضوع جدید را آغاز کنید یا از حساب خود خارج شده و مجددا وارد شوید. اگر این راه‌حل‌ها کار نکردند، لطفا با استفاده از جملات خود مشابه اما به صورت خود شما چالش را دوباره.
 
-I've authored a free e-book called **"The Art of ChatGPT Prompting: A Guide to Crafting Clear and Effective Prompts"**.
+### آیا می‌خواهید چالش‌های مؤثری بنویسید؟
 
-📖 **[Read the free e-book](https://fka.gumroad.com/l/art-of-chatgpt-prompting?a=705657043)**
+پیشنهاد میکنیم در وب سایت https://prompts.ir به تولید و ذخیره پروپت های خود بپردازید
 
-### Want to deploy your own Prompt App?
+📖 **[این کتاب رایگان را مطالعه کنید](https://fka.gumroad.com/l/art-of-chatgpt-prompting?a=705657043)**
 
-The folks at [Steamship](https://www.steamship.com/build?utm_source=github&utm_medium=explainer&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts) built a framework to host and share your GPT apps. They're sponsoring this repo by giving you free (up to 500 calls per day) access to the latest GPT models.  
+👷‍♂️ **[برنامه تولید پرموپت خود را بسازید](https://www.steamship.com/build?utm_source=github&utm_medium=explainer&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts)**
 
-👷‍♂️ **[Build your own GPT Prompt App](https://www.steamship.com/build?utm_source=github&utm_medium=explainer&utm_campaign=awesome_gpt_prompts&utm_id=awesome_gpt_prompts)**
+### آیا می‌خواهید یاد بگیرید چگونه با استفاده از چالش‌های شگفت‌انگیز چت‌جی‌پی‌تی پول دربیاورید؟
 
-### Want to Learn How to Make Money using ChatGPT Prompts?
+من یک کتاب الکترونیک رایگان به نام "هنر چالش‌دهی چت‌جی‌پی‌تی: راهنمایی برای ساخت چالش‌های واضح و مؤثر" نوشته‌ام
 
-I've authored an e-book called **"How to Make Money with ChatGPT: Strategies, Tips, and Tactics"**.
-
-📖 **[Buy the e-book](https://fka.gumroad.com/l/how-to-make-money-with-chatgpt?a=705657043)**
+📖 **[خرید کتاب](https://fka.gumroad.com/l/how-to-make-money-with-chatgpt?a=705657043)**
 
 ---
 
-### Using ChatGPT Desktop App
+### استفاده از نرم افزار قابل نصب چت‌جی‌پی‌تی (نسخه غیررسمی)
 
-The _unofficial_ ChatGPT desktop application provides a convenient way to access and use the prompts in this repository. With the app, you can easily import all the prompts and use them with slash commands, such as `/linux_terminal`. This feature eliminates the need to manually copy and paste prompts each time you want to use them.
+نرم‌افزار چت‌جی‌پی‌تی نسخهٔ دسکتاپ غیررسمی، یک روش مناسب برای دسترسی به چالش‌های موجود در این مخزن و استفاده از آن‌ها فراهم می‌کند. با این برنامه، می‌توانید به‌راحتی تمام چالش‌ها را وارد کنید و از دستورات گزینه‌های خط (/) مانند «/linux_terminal» استفاده کنید. این قابلیت نیاز به کپی کردن و سپس الصاق دستی هر بار که می‌خواهید از چالش استفاده کنید را از بین می‌برد.
 
-> **Desktop App is an unofficial [open source project by @lencx](https://github.com/lencx/ChatGPT). It's a simple wrapper for ChatGPT web interface with powerful extras.**
+
+> **اپلیکیشن دسکتاپ، یک پروژه غیررسمی و متن‌باز توسط @lencx می‌باشد. این برنامه، یک پوشش ساده برای رابط وب ChatGPT با قابلیت‌های بیشتر و قدرتمندتر است.**
 
 <img width="400" alt="Screenshot 2022-12-19 at 19 13 41" src="https://user-images.githubusercontent.com/196477/208471439-877c2bcf-93ec-4ad9-9cb0-7e4ed7b1756a.png">
 
 ---
 
-### Create your own prompt using AI
+### با هوش مصنوعی پرمومپت های خود را تولید کنید
 
-[Merve Noyan](https://huggingface.co/merve) created an exceptional [ChatGPT Prompt Generator App](https://huggingface.co/spaces/merve/ChatGPT-prompt-generator), allowing users to generate prompts tailored to their desired persona. The app uses this repository as its training dataset.
+[Merve Noyan](https://huggingface.co/merve) یک اپلیکیشن بی‌نظیر تولید پرومپت ساخته شده است که به کاربران این امکان را می‌دهد تا با توجه به شخصیت مورد نظرشان، پرومپت‌های مورد نظرشان را تولید کنند. این اپلیکیشن از این مخزن به عنوان مجموعه داده‌ی آموزشی استفاده می‌کند.
   
 ---
 
-### Using prompts.chat
+### از سرویس prompts.chat استفاده کنید
 
-[prompts.chat](https://prompts.chat) is designed to provide an enhanced UX when working with prompts. With just a few clicks, you can easily edit and copy the prompts on the site to fit your specific needs and preferences. The copy button will copy the prompt exactly as you have edited it.
+[prompts.chat](https://prompts.chat) این اپلیکیشن با هدف بهبود تجربه کاربری در کار با پرومپت‌ها طراحی شده است. با چند کلیک ساده، شما می‌توانید به راحتی پرومپت‌ها را ویرایش کرده و به نیازها و ترجیحات خاص خودتان بپاسانید. دکمه کپی نیز پرومپت را به همان شکلی که شما ویرایش کرده‌اید، کپی می‌کند.
 
 <video autoplay loop muted playsinline src="https://user-images.githubusercontent.com/196477/207992596-6846398c-9ee7-4d7b-8fbe-b7c9e6daad23.mov"></video>
 
 ---
 
-# Prompts
+# نمونه لیستی از پرومپت‌ها
 
 ## Act as a Linux Terminal
 Contributed by: [@f](https://github.com/f)
