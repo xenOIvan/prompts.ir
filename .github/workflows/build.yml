@@ -1,66 +1,66 @@
-name: Build and Deploy
+name: Awesome ChatGPT Prompts
 
 on:
-  push:
-    branches:
-      - main
-
-env:
-  JEKYLL_ENV: production
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Ruby 2.7.x
-        uses: ruby/setup-ruby@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          ruby-version: 2.7.x
+          node-version: 14.x
 
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build
+      - name: Run Tests
+        run: npm test
 
-      - name: Run actions/jekyll-build-pages
-        uses: actions/jekyll-build-pages@v1
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          source: .
-          destination: ./_site
-          future: false
-          build_revision: 31bddc948c2fb26cece3b6475d44025d7a9002f2
-          verbose: true
-          token: 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
+          node-version: 14.x
 
-      - name: Run actions/upload-pages-artifact
-        uses: actions/upload-artifact@v1
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Lint Code
+        run: npm run lint
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          name: github-pages
-          path: ./_site
-          retention-days: 1
+          node-version: 14.x
 
-      - name: Run actions/upload-artifact
-        uses: actions/upload-artifact@v2
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Application
+        run: npm run build
+
+      - name: Deploy to Production
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: github-pages
-          path: /home/runner/work/_temp/artifact.tar
-          retention-days: 1
-          if-no-files-found: warn
-
-      - name: Post job cleanup
-        run: |
-          /usr/bin/git version
-          git config --global --add safe.directory ${{ github.workspace }}
-          git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-          git config --local --unset-all http.https://github.com/.extraheader
-
-      - name: Clean up orphan processes
-        run: pkill -P 1
-
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./build
