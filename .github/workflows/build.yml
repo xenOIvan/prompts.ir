@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Deploy Pages
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Build Jekyll site
+      uses: actions/jekyll-build-pages@v1
+    - name: Upload built pages artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        artifact-name: built-pages
+        path: _site
+    - name: Upload artifact for deployment
+      uses: actions/upload-artifact@main
+      with:
+        name: pages-artifact
+        path: ${{ github.workspace }}/built-pages
