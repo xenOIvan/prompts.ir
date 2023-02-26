@@ -1,0 +1,41 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Build pages
+        uses: actions/jekyll-build-pages@v1
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          name: pages
+          path: ./_site
+      - name: Upload log artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: build-log
+          path: ./log.txt
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Jekyll site
+        uses: docker://ghcr.io/actions/jekyll-build-pages:v1.0.7
+        with:
+          args: jekyll build
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3.7.0
+        with:
+          personal_token: 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
+          publish_branch: gh-pages
+          publish_dir: ./_site
